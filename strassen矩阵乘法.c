@@ -38,7 +38,7 @@ int square_matrix_strassen_recursive(
 	__in	sm_t *sm_B,
 	__inout	sm_t *sm_C);
 
-//构造加减法运算
+//鹿鹿脭矛录脫录玫路篓脭脣脣茫
 //sm_C = sm_A + sm_B
 //no check here
 static void square_matrix_add(

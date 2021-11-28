@@ -7,12 +7,12 @@
 
 #endif //ALGORITHM_PREPROCESSOR_H
 
-// ¶¨Òå¾ØÕó
+// å®šä¹‰çŸ©é˜µ
 double matrix_1[row][col];
 double matrix_2[row][col];
 double matrix_result_1[row][row];
 
-//¸³Öµ¾ØÕó
+//èµ‹å€¼çŸ©é˜µ
 void set_matrix_A()
 {
     for(int i = 0 ; row > i ; i++)
@@ -33,7 +33,7 @@ void set_matrix_B()
         }
     }
 }
-//´òÓ¡¾ØÕó
+//æ‰“å°çŸ©é˜µ
 void print_matrix_A()
 {
     for(int i = 0 ; row > i ; i++)
@@ -56,7 +56,7 @@ void print_matrix_B()
         printf("\n");
     }
 }
-//¾ØÕóÏà³Ë
+//çŸ©é˜µç›¸ä¹˜
 void dot_matrix()
 {
     for(int i = 0 ; i < row; i++)
@@ -85,18 +85,18 @@ void print_matrix_result()
 }
 
 int main() {
-    printf("¸ø¾ØÕóA(¾ØÕóµÄĞĞÎª%dÁĞÎª%d)¸³Öµ\n", row,col);
+    printf("ç»™çŸ©é˜µA(çŸ©é˜µçš„è¡Œä¸º%dåˆ—ä¸º%d)èµ‹å€¼\n", row,col);
     set_matrix_A();
-    printf("¸ø¾ØÕóB(¾ØÕóµÄĞĞÎª%dÁĞÎª%d)¸³Öµ\n", row,col);
+    printf("ç»™çŸ©é˜µB(çŸ©é˜µçš„è¡Œä¸º%dåˆ—ä¸º%d)èµ‹å€¼\n", row,col);
     set_matrix_B();
-    printf("¾ØÕóAµÄÊı¾İÎª\n");
+    printf("çŸ©é˜µAçš„æ•°æ®ä¸º\n");
     print_matrix_A();
-    printf("¾ØÕóBµÄÊı¾İÎª\n");
+    printf("çŸ©é˜µBçš„æ•°æ®ä¸º\n");
     print_matrix_B();
 
-    //¾ØÕóÏà³ËµÄ½á¹ûÎª
+    //çŸ©é˜µç›¸ä¹˜çš„ç»“æœä¸º
     dot_matrix();
-    printf("Ïà³ËµÄ½á¹ûÎª\n");
+    printf("ç›¸ä¹˜çš„ç»“æœä¸º\n");
     print_matrix_result();
     return 0;
 }

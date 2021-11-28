@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*暴力求解
+/*卤漏脕娄脟贸陆芒
 int subset_direct(int *A,int n)
 {
     int sum_max = -99999;

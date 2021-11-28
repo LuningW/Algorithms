@@ -32,7 +32,7 @@ int linear_subset(int A[],int n)
             max_sum = temp;
         }
         if(temp<0){
-            temp = 0;
+            temp = 0；
         }
     }
     return max_sum;

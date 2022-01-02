@@ -15,7 +15,7 @@ int Find(struct TreeNode* root)
     int hRight = Find(root->right);
     if (hLeft - hRight > 1 || hRight - hLeft > 1 || hLeft == -1 || hRight == -1) {
         return -1;
-    } else {
+    } else { 
         return hLeft > hRight ? hLeft + 1 : hRight + 1;
     }
 }

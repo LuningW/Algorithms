@@ -7,7 +7,7 @@ int countNodes(struct TreeNode* root){
     if(root->left!=NULL)
     {
         num+=countNodes(root->left);
-    }
+    } 
     if(root->right!=NULL)
     {
         num+=countNodes(root->right);

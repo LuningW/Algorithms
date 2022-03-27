@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    				//输入块
+    				
     int n;
     scanf("%d",&n); 
     
@@ -13,7 +13,7 @@ int main()
     
     int m;
     scanf("%d",&m);
-    				//算法块
+    				
     int x;//试机号
     int j;//b的行数和a的位数
     for(i=0;i<m;i++)//查询次数

@@ -1,29 +1,35 @@
-#include<iostream>
-#include<stdio.h>
+#include <iostream>
+
 using namespace std;
+
 int main()
 {
-    int a,b,i;
-    scanf("%02d:%02d",&a,&b);
-    if(a>=0&&a<12)printf("Only %02d:%02d.  Too early to Dang.",a,b);
-    else if(a==12&&b==00)printf("Only %02d:%02d.  Too early to Dang.",a,b);
-    else if(b==00)
+    int a_jl,b_jl;//a的酒量和b的酒量
+    cin>>a_jl>>b_jl;
+    int n;//轮数
+    cin>>n;
+    int a=a_jl,b=b_jl;//a和b还能喝的杯数
+    int a1,a2,b1,b2;//1为喊，2为划
+    for(int i=0;i<n;i++)
     {
-        if(a>12)a=a-12;
-        for(i=0;i<a;i++)
+        cin>>a1>>a2>>b1>>b2;
+        int sum=a1+b1;
+        if(sum==a2&&(a2!=b2))
+            a--;
+        if(sum==b2&&(a2!=b2))
+            b--;
+        if(a<0)
         {
-            cout<<"Dang";
+            cout<<'A'<<endl<<b_jl-b;
+            break;
         }
-        cout<<endl;
-    }
-    else
-    {
-        if(a>12)a=a-12;
-        for(i=0;i<=a;i++)
+
+        if(b<0)
         {
-             cout<<"Dang";
+            cout<<'B'<<endl<<a_jl-a;
+            break;
         }
-        cout<<endl;
+
     }
     return 0;
 }
